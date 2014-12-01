@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LoginScreenActivity"
+    android:background="#FFFFFF"
+    android:clickable="false">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="user0"
+
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:background="#B4A7D6"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="pass"
+        android:inputType="textPassword"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignStart="@+id/username"
+        android:background="#00FFFF"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        android:clickable="true" />
+
+    <EditText
+
+        android:layout_above="@+id/username"
+        android:id="@+id/server"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#00FFFF"
+        android:textColor="#FFFFFF"
+        android:hint="Server"
+        android:text="@string/localhost" />
+    <requestFocus/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Gift Chain"
+        android:layout_gravity="right|center_vertical"
+        android:textColor="#999999"
+        android:textSize="35dp"
+        android:paddingEnd="15dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="327dp"
+        android:layout_height="89dp"
+        android:text="Potlatch"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal|top"
+        android:clickable="false"
+        android:textColor="#8E7CC3"
+        android:textIsSelectable="false"
+        android:textSize="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+</RelativeLayout>
